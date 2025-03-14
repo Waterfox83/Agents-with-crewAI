@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'Best destinations in India for wildlife photography',
+        'topic': 'Tell me about Snowflake',
         'current_year': str(datetime.now().year)
     }
     
@@ -33,7 +33,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs"
+        "topic": "Best practices for creating microservices"
     }
     try:
         LatestAiDevelopment().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
